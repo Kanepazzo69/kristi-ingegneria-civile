@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio di Ingegneria Civile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 30%;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-form, .sketch-form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+        }
+        .contact-form input, .contact-form textarea, .sketch-form input, .sketch-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .contact-form button, .sketch-form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover, .sketch-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio di Ingegneria Civile</h1>
+    </header>
+    <nav>
+        <a href="#projects">Progetti</a>
+        <a href="#contact">Contatti</a>
+        <a href="#sketch">Proponi un Progetto</a>
+    </nav>
+    <div class="container">
+        <div class="content" id="projects">
+            <h2>Progetti CAD 2D e 3D</h2>
+            <div class="gallery">
+                <img src="C:\Users\abdul\OneDrive\Desktop\PROGETTO\Post instagram\Campus\3_page-0001.jpg" alt="3_page-0001.jpg">
+                         </div>
+        </div>
+        <div class="content contact-form" id="contact">
+            <h2>Contattami</h2>
+            <form action="mailto:kristidervishaliaj5@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Messaggio:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Invia</button>
+            </form>
+        </div>
+        <div class="content sketch-form" id="sketch">
+            <h2>Proponi un Progetto</h2>
+            <form action="mailto:tuoindirizzoemail@example.com" method="post" enctype="text/plain">
+                <label for="idea">Descrivi la tua idea:</label>
+                <textarea id="idea" name="idea" rows="4" required></textarea>
+                <button type="submit">Invia</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Portfolio di Ingegneria Civile. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
